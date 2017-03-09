@@ -1,0 +1,142 @@
+
+/* -----------------------------------------
+   LIGHTBOX GALLERY
+----------------------------------------- */
+.gallery {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.gallery .item {
+  float: left;
+  position: relative;
+  text-align: center;
+  margin-bottom: 22px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 480px) {
+  .gallery .item {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.gallery a.gallery-item {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  /* Use pseudo selectors to add the background */
+  /* Transition in the color panel */
+  /* Use pseudo selectors to add the icon */
+  /* Transition the icon up */
+}
+.gallery a.gallery-item:before {
+  content: "";
+  background-color: #fff;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.gallery a.gallery-item:hover:before {
+  height: 100%;
+  overflow: visible;
+  opacity: 0.7;
+}
+.gallery a.gallery-item:after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-left: -16px;
+  margin-top: -24px;
+  z-index: 101;
+  font-family: 'CaGov';
+  font-size: 32px;
+  font-size: 2rem;
+  -webkit-transition: all .5s;
+          transition: all .5s;
+}
+.gallery a.gallery-item:hover:after {
+  content: "\e65e";
+  font-family: 'CaGov';
+  font-size: 32px;
+  font-size: 2rem;
+  color: #1f89db;
+  top: 50%;
+}
+.gallery img {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+  bottom: 0;
+  display: inline-block;
+  position: relative;
+  max-height: 140px;
+}
+.ie8 .gallery img {
+  width: auto !important;
+}
+.gallery.three-up .item {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .gallery.three-up .item {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .gallery.three-up .item {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.gallery.four-up .item {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .gallery.four-up .item {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .gallery.four-up .item {
+    float: left;
+    width: 25%;
+  }
+}
+.gallery.gallery-small .item {
+  float: left;
+  width: 33.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .gallery.gallery-small .item {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.gallery.gallery-small img {
+  width: auto;
+  height: auto;
+}

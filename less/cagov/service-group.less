@@ -1,0 +1,188 @@
+/* Service Tile when Expanded */
+
+.more-button {
+  position: relative;
+  overflow: hidden;
+}
+.more-button .more-content {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.more-button .btn-more {
+  position: relative;
+}
+.service-tile-panel {
+  /*Selectivly show when requested by user*/
+  visibility: collapse;
+  position: absolute;
+}
+.service-tile-panel .btn.close {
+  font-size: 56px;
+  font-size: 3.5rem;
+}
+
+/* Service Tile */
+
+.service-tile {
+  float: left;
+  width: 100%;
+  /* Need to keep the two column longer than bootstrap has .make-*-column for */
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  min-height: 240px;
+  color: #E1F2F7;
+  background: #046B99;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 450px) {
+  .service-tile {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .service-tile {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .service-tile {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .service-tile {
+    min-height: 280px;
+  }
+}
+@media (min-width: 992px) {
+  .service-tile {
+    min-height: 240px;
+  }
+}
+@media (min-width: 1280px) {
+  .service-tile {
+    min-height: 320px;
+  }
+}
+.service-tile .icon-fallback {
+  min-width: 100%;
+  line-height: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+}
+.service-tile .teaser {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 30%, #000000 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 30%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#000000', GradientType=0);
+  color: #fff;
+  padding: 10px 0;
+}
+.service-tile .teaser .title {
+  margin: 5px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+.service-tile .teaser .title:hover, .service-tile:focus .teaser .title {
+  color: #FDB81E;
+}
+.title:after {
+  margin-top: 8px !important;
+  font-family: 'CaGov';
+  display: block;
+  font-weight: normal;
+}
+[data-state="closed"].service-tile .title:after,
+[data-state="info"].service-tile .title:after {
+  content: "\50";
+}
+[data-state="open"].service-tile .title:after {
+  content: "\4f";
+}
+[data-state="open"].service-tile:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #000;
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  bottom: -15px;
+  z-index: 5;
+}
+.service-tile-empty {
+  background: #046B99;
+  color: #9FDBF1;
+  overflow: hidden;
+  width: 100%;
+  /* Need to keep the two column longer than bootstrap has .make-*-column for */
+}
+.service-tile-empty span {
+  font-size: 17em;
+  line-height: 1;
+}
+.service-tile-empty .title:after {
+  content: "\e65d" !important;
+}
+.service-tile-empty.half,
+.service-tile-empty.quarter,
+.service-tile-empty.third {
+  width: 100%;
+}
+@media (min-width: 450px) {
+  .service-tile-empty.full {
+    width: 100%;
+  }
+  .service-tile-empty.third {
+    width: 50%;
+  }
+  .service-tile-empty.half {
+    width: 100%;
+  }
+  .service-tile-empty.quarter {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .service-tile-empty.full {
+    width: 100%;
+  }
+  .service-tile-empty.third {
+    width: 75%;
+  }
+  .service-tile-empty.half {
+    width: 50%;
+  }
+  .service-tile-empty.quarter {
+    width: 25%;
+  }
+}

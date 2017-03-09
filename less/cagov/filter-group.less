@@ -1,0 +1,93 @@
+.filter-group:before {
+  content: "";
+  display: block;
+  margin-bottom: 16px !important;
+}
+.filter-toggle.active {
+  position: relative;
+  z-index: 1;
+}
+.filter-toggle.active:before {
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  bottom: -18px;
+}
+.filter-toggle.active:after {
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  bottom: -19px;
+}
+.section .filter-group:before,
+.card .filter-group:before {
+  border-top: 1px solid #d6d6d6;
+}
+.section .filter-toggle.active:before,
+.card .filter-toggle.active:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #d6d6d6;
+}
+.section .filter-toggle.active:after,
+.card .filter-toggle.active:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #fff;
+}
+.section-search .filter-group:before,
+.card-search .filter-group:before {
+  border-top: 1px solid #bdbdbd;
+}
+.section-search .filter-toggle.active:before,
+.card-search .filter-toggle.active:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #bdbdbd;
+}
+.section-search .filter-toggle.active:after,
+.card-search .filter-toggle.active:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #d6d6d6;
+}
+.section-default .filter-group:before,
+.card-default .filter-group:before {
+  border-top: 1px solid #d6d6d6;
+}
+.section-default .filter-toggle.active:before,
+.card-default .filter-toggle.active:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #d6d6d6;
+}
+.section-default .filter-toggle.active:after,
+.card-default .filter-toggle.active:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #f5f5f5;
+}

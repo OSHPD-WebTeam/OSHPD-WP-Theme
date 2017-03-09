@@ -1,0 +1,57 @@
+/* Adds open and closed icons to accordion */
+.accordion,
+.panel-group,
+.service-tile-content {
+  /* Move padding from container to the href so the entire panel is clickable */
+}
+.accordion .panel-heading,
+.panel-group .panel-heading,
+.service-tile-content .panel-heading {
+  padding: 0;
+}
+.accordion .panel-heading a,
+.panel-group .panel-heading a,
+.service-tile-content .panel-heading a {
+  padding: 15px;
+  padding-right: 30px;
+}
+.accordion .panel-heading .panel-title,
+.panel-group .panel-heading .panel-title,
+.service-tile-content .panel-heading .panel-title {
+  margin-top: 0;
+  display: block;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.accordion .panel-heading .panel-title a,
+.panel-group .panel-heading .panel-title a,
+.service-tile-content .panel-heading .panel-title a {
+  display: block;
+  position: relative;
+  outline: none;
+  /* Adds open and closed icons to responsive tab panels */
+}
+.accordion .panel-heading .panel-title a:hover,
+.panel-group .panel-heading .panel-title a:hover,
+.service-tile-content .panel-heading .panel-title a:hover,
+.accordion .panel-heading .panel-title a:focus,
+.panel-group .panel-heading .panel-title a:focus,
+.service-tile-content .panel-heading .panel-title a:focus {
+  text-decoration: none;
+}
+.accordion .panel-heading .panel-title a:after,
+.panel-group .panel-heading .panel-title a:after,
+.service-tile-content .panel-heading .panel-title a:after {
+  content: "\43";
+  font-family: 'CaGov';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -11px;
+  color: #777777;
+}
+.accordion .panel-heading .panel-title a.collapsed:after,
+.panel-group .panel-heading .panel-title a.collapsed:after,
+.service-tile-content .panel-heading .panel-title a.collapsed:after {
+  content: "\45";
+}

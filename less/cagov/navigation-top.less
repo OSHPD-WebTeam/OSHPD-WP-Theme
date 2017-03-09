@@ -1,0 +1,88 @@
+.utility-header {
+  top: 0;
+  width: 100%;
+  background: #046B99;
+  color: #ffffff;
+}
+.utility-header .half {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .utility-header .half {
+    float: left;
+    width: 50%;
+  }
+}
+.utility-header a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 3px 0;
+}
+.utility-header a:hover,
+.utility-header a:focus,
+.utility-header a.hovered {
+  color: #FDB81E;
+  text-decoration: none;
+}
+.utility-header ul {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+  margin-bottom: 0;
+}
+.utility-header ul > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.utility-header ul li {
+  padding: 0 12px;
+}
+.utility-header .settings-links {
+  font-size: 87%;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .utility-header .settings-links {
+    text-align: left;
+  }
+}
+.utility-header [class^="ca-gov-icon-"] {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  vertical-align: -2px;
+}
+@media (max-width: 767px) {
+  .utility-header .social-media-links {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+}
+.utility-header .located-city-name {
+  margin-left: 5px;
+}
+.utility-header .geo-zip-input {
+  margin-left: 5px;
+  width: 50%;
+  vertical-align: initial;
+  line-height: 120%;
+  background: white;
+  color: black;
+}
+/* .global-header.compact {
+    .utility-header {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 0;
+    }
+} */

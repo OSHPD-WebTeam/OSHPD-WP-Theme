@@ -1,0 +1,71 @@
+/* Default layout is 1 column */
+.main-content {
+  background: #fff;
+  min-height: 400px;
+}
+.main-content > .section {
+  padding-bottom: 22px;
+}
+/* Two column layout option */
+@media (min-width: 992px) {
+  .two-column .main-content .main-primary {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .two-column .main-content .main-secondary {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .two-column .main-content .main-primary {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .two-column .main-content .main-secondary {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .two-column .main-content .reverse-main .main-primary {
+    left: 33.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .two-column .main-content .reverse-main .main-secondary {
+    right: 66.66666667%;
+  }
+}
+@media (max-width: 991px) {
+  .two-column .main-content .main-secondary {
+    position: inherit;
+  }
+}
+/* Remove the left and right border for mobile */
+@media (max-width: 768px) {
+  .global-header,
+  .main-content,
+  .global-footer {
+    border: none !important;
+    width: 100%;
+  }
+}
+/* Allows two column containers used in the sidebar to fill the horizontal space */
+@media (max-width: 767px) {
+  .main-secondary .group {
+    padding: 0 !important;
+  }
+  .main-secondary .group .half {
+    padding: 0 !important;
+  }
+}
+.decoration-last {
+  display: none;
+}

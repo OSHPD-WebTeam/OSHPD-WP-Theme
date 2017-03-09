@@ -1,0 +1,38 @@
+.header-slideshow-banner {
+  display: none;
+  height: 600px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .header-slideshow-banner.enabled {
+    display: block;
+  }
+}
+.header-single-banner, .header-large-banner, .header-primary-banner  {
+  width: 100%;
+  /* Will be overriden with js */
+  height: auto;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  /* Preserve aspect ratio */
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+.header-slideshow-banner {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-banner,
+.carousel-banner .owl-stage-outer,
+.carousel-banner .owl-stage,
+.carousel-banner .owl-item,
+.carousel-banner .slide {
+  height: 100%;
+}

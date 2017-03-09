@@ -1,0 +1,45 @@
+.tab-group {
+  position: relative;
+  border: 1px solid #ddd;
+}
+@media (max-width: 991px) {
+  .tab-group {
+    border: none;
+  }
+}
+.tab-group > [class^="ca-gov-icon-"] {
+  display: none !important;
+}
+.tab-group .nav-tabs {
+  border-radius: 0;
+}
+.tab-group .nav-tabs li:first-child a {
+  border-left: 0;
+}
+.tab-group .nav-tabs li.active {
+  border-top: 0;
+}
+.tab-group .nav-tabs li > a {
+  padding: 3px 15px;
+  border-top: 0;
+}
+.tab-group .tab-pane {
+  padding: 15px;
+}
+/* Bottom Tabs */
+.tabs-bottom .tab-content {
+  padding-bottom: 30px;
+}
+.tabs-bottom .nav-tabs {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.tabs-bottom .nav-tabs > li {
+  margin-bottom: 0;
+}
+.panel-group.responsive {
+  margin-bottom: 0;
+}

@@ -1,0 +1,109 @@
+.course-item {
+  background: #f2f2f2;
+  padding: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.course-item:before,
+.course-item:after {
+  content: " ";
+  display: table;
+}
+.course-item:after {
+  clear: both;
+}
+.course-item:before,
+.course-item:after {
+  content: " ";
+  display: table;
+}
+.course-item:after {
+  clear: both;
+}
+.course-item .header {
+  margin-bottom: 0;
+}
+.course-item .header:before,
+.course-item .header:after {
+  content: " ";
+  display: table;
+}
+.course-item .header:after {
+  clear: both;
+}
+.course-item .header:before,
+.course-item .header:after {
+  content: " ";
+  display: table;
+}
+.course-item .header:after {
+  clear: both;
+}
+.course-item .header .title {
+  float: left;
+  margin-right: 15px;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: 'Arial Narrow', 'Helvetica Narrow', Arial, Helvetica, sans-serif;
+  font-stretch: condensed;
+}
+.course-item .header .filing-date {
+  float: right;
+}
+.course-item .header .start-date {
+  float: left;
+  margin-top: 8px;
+}
+.course-item .footer {
+  position: relative;
+  clear: both;
+}
+.course-item .footer:before,
+.course-item .footer:after {
+  content: " ";
+  display: table;
+}
+.course-item .footer:after {
+  clear: both;
+}
+.course-item .footer:before,
+.course-item .footer:after {
+  content: " ";
+  display: table;
+}
+.course-item .footer:after {
+  clear: both;
+}
+.course-item .footer a.btn {
+  float: right;
+  margin-top: 11px;
+  padding: 1px 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+@media (max-width: 992px) {
+  .course-item .footer a.btn {
+    float: left;
+  }
+}
+.course-item .footer .published {
+  float: left;
+  margin-top: 10px;
+  color: #777777;
+  font-style: italic;
+}
+.course-item .thumbnail img {
+  position: absolute;
+}
+.course-item > .thumbnail + .well-header,
+.course-item > .thumbnail ~ .well-body {
+  margin-left: 85px;
+}
+.course-item .thumbnail ~ .header,
+.course-item .thumbnail ~ .body {
+  margin-left: 85px;
+}
+.course-item .datetime {
+  clear: both;
+}

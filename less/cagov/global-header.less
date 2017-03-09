@@ -1,0 +1,111 @@
+#skip-to-content {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.global-header {
+  position: relative;
+  padding: 0;
+  background: #fff;
+  width: auto;
+}
+
+
+@media (min-width: 768px) {
+  .global-header .mobile-controls {
+    display: none;
+  }
+}
+
+.branding {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+@media (min-width: 768px) {
+  .branding {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .branding {
+    width: 970px;
+  }
+}
+@media (min-width: 1280px) {
+  .branding {
+    width: 1280px;
+  }
+}
+@media (min-width: 768px) {
+  .branding {
+    height: 88px !important;
+  }
+}
+.branding .header-organization-banner {
+  line-height: 88px;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.branding .header-organization-banner img {
+  max-height: 50px;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.branding .header-organization-banner a {
+  display: inline-block;
+  z-index: 26;
+  position: relative;
+}
+.mobile-controls toggle-menu {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.mobile-controls toggle-search {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+@media (min-width: 768px) {
+  .header-slideshow-banner.enabled {
+    display: block;
+  }
+}
+.header-single-banner, .header-large-banner, .header-primary-banner {
+  width: 100%;
+  /* Will be overriden with js */
+  height: auto;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  /* Preserve aspect ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+.header-slideshow-banner {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-banner,
+.carousel-banner .owl-stage-outer,
+.carousel-banner .owl-stage,
+.carousel-banner .owl-item,
+.carousel-banner .slide {
+  height: 100%;
+}

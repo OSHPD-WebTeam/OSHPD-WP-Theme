@@ -1,0 +1,273 @@
+/* 
+    NOTE: This might make more sence later to be moved to the color schemes
+*/
+/* .btn-primary {
+    border:2px solid #fff;
+    background:none;
+    color:#fff;
+    transition:all 0.5s;
+    
+    &:hover, &:focus {
+        .rgba (#fff, .2);
+        background-color: @rgba;
+        //box-shadow: 0 0 5px rgba(255,255,255,0.8);
+        border-color:#fff;
+        color:#fff;
+    }
+} */
+.btn-primary {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: transparent;
+  border-color: #fff;
+}
+.btn-primary .badge {
+  color: transparent;
+  background-color: #fff;
+}
+.btn-default {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-color: #000;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #000;
+  background-color: #ffffff;
+  border-color: #000;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: rgba(255, 255, 255, 0.65);
+  border-color: #000;
+}
+.btn-default .badge {
+  color: rgba(255, 255, 255, 0.65);
+  background-color: #000;
+}
+.btn-secondary {
+  color: #555555;
+  background-color: #f5f5f5;
+  border-color: #555555;
+  border-width: 1px;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.open > .dropdown-toggle.btn-secondary {
+  color: #2a6496;
+  background-color: #fff;
+  border-color: #000;
+}
+.btn-secondary:active,
+.btn-secondary.active,
+.open > .dropdown-toggle.btn-secondary {
+  background-image: none;
+}
+.btn-secondary.disabled,
+.btn-secondary[disabled],
+fieldset[disabled] .btn-secondary,
+.btn-secondary.disabled:hover,
+.btn-secondary[disabled]:hover,
+fieldset[disabled] .btn-secondary:hover,
+.btn-secondary.disabled:focus,
+.btn-secondary[disabled]:focus,
+fieldset[disabled] .btn-secondary:focus,
+.btn-secondary.disabled:active,
+.btn-secondary[disabled]:active,
+fieldset[disabled] .btn-secondary:active,
+.btn-secondary.disabled.active,
+.btn-secondary[disabled].active,
+fieldset[disabled] .btn-secondary.active {
+  background-color: #f5f5f5;
+  border-color: #555555;
+}
+.btn-secondary .badge {
+  color: #f5f5f5;
+  background-color: #555555;
+}
+.btn-secondary.active {
+  background: #555555;
+  color: #fff;
+  box-shadow: none;
+}
+.btn-more {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.btn-more:focus,
+.btn-more:active:focus,
+.btn-more.active:focus,
+.btn-more.focus,
+.btn-more:active.focus,
+.btn-more.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-more:hover,
+.btn-more:focus,
+.btn-more.focus {
+  color: #014e77;
+  text-decoration: none;
+}
+.btn-more:active,
+.btn-more.active {
+  outline: 0;
+  background-image: none;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-more.disabled,
+.btn-more[disabled],
+fieldset[disabled] .btn-more {
+  cursor: not-allowed;
+  opacity: 0.35;
+  filter: alpha(opacity=35);
+  box-shadow: none;
+}
+a.btn-more.disabled,
+fieldset[disabled] a.btn-more {
+  pointer-events: none;
+}
+.btn-more:focus {
+  outline: dotted 2px #000;
+}
+.btn-more .more-title {
+  display: block;
+}
+.btn-more .more-icon {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+.btn-more.inverse {
+  background-color: #000;
+  color: #fff;
+}
+.btn-more.inverse:hover,
+.btn-more.inverse:focus {
+  color: #FDB81E;
+}
+@media (max-width: 767px) {
+  [role="group"].btn-group {
+    margin-top: 10px;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+  }
+  [role="group"].btn-group > .btn,
+  [role="group"].btn-group > .btn-group {
+    float: none;
+    display: table-cell;
+    width: 100%;
+  }
+  [role="group"].btn-group > .btn-group .btn {
+    width: 100%;
+  }
+  [role="group"].btn-group > .btn-group .dropdown-menu {
+    left: auto;
+  }
+}
+@media (max-width: 767px) {
+  .btn-block-xs {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 16px !important;
+  }
+}
+@media (max-width: 991px) {
+  .btn-block-sm {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 16px !important;
+  }
+}
+.btn-row .btn {
+  margin-right: 8px !important;
+  margin-bottom: 8px !important;
+}
+@media (max-width: 767px) {
+  .btn-row .btn {
+    margin-bottom: 8px !important;
+  }
+}

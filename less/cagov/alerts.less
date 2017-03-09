@@ -1,0 +1,49 @@
+.alert-banner {
+  margin-bottom: 0;
+  padding: 5px 0;
+  border-radius: 0;
+  -webkit-column-rule: rgba(255, 255, 255, 0.8);
+     -moz-column-rule: rgba(255, 255, 255, 0.8);
+          column-rule: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+}
+.alert-banner .close {
+  right: -10px;
+  opacity: 1;
+}
+.alert-level {
+  display: inline-block;
+  font-weight: bold;
+  padding: 0 5px;
+  margin: 0 5px;
+  font-size: 13.92px;
+  font-size: 0.87rem;
+}
+.alert-level [class^="ca-gov-icon-"] {
+  margin-right: 3px;
+}
+.alert-link {
+  line-height: 1.2em;
+  float: right !important;
+}
+.alert-severe {
+  background: #F27e31;
+}
+.alert-severe .close {
+  color: #823908;
+  text-shadow: 0 1px #f8ba91;
+}
+.alert-severe .alert-level {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+}
+.alert-severe .alert-text {
+  color: #ffffff;
+}
+.global-header.compact .alert-banner {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 0;
+}

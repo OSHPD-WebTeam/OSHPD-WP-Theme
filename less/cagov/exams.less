@@ -1,0 +1,116 @@
+.exam-item {
+  background: #f2f2f2;
+  padding: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.exam-item:before,
+.exam-item:after {
+  content: " ";
+  display: table;
+}
+.exam-item:after {
+  clear: both;
+}
+.exam-item:before,
+.exam-item:after {
+  content: " ";
+  display: table;
+}
+.exam-item:after {
+  clear: both;
+}
+.exam-item .header {
+  margin-bottom: 0;
+}
+.exam-item .header:before,
+.exam-item .header:after {
+  content: " ";
+  display: table;
+}
+.exam-item .header:after {
+  clear: both;
+}
+.exam-item .header:before,
+.exam-item .header:after {
+  content: " ";
+  display: table;
+}
+.exam-item .header:after {
+  clear: both;
+}
+.exam-item .header .title {
+  float: left;
+  margin-right: 15px;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: 'Arial Narrow', 'Helvetica Narrow', Arial, Helvetica, sans-serif;
+  font-stretch: condensed;
+}
+.exam-item .header .filing-date {
+  float: right;
+}
+.exam-item .header .start-date {
+  float: left;
+  margin-top: 8px;
+}
+.exam-item .footer {
+  position: relative;
+  clear: both;
+}
+.exam-item .footer:before,
+.exam-item .footer:after {
+  content: " ";
+  display: table;
+}
+.exam-item .footer:after {
+  clear: both;
+}
+.exam-item .footer:before,
+.exam-item .footer:after {
+  content: " ";
+  display: table;
+}
+.exam-item .footer:after {
+  clear: both;
+}
+.exam-item .footer a.btn {
+  float: right;
+  margin-top: 11px;
+  padding: 1px 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+@media (max-width: 992px) {
+  .exam-item .footer a.btn {
+    float: left;
+  }
+}
+.exam-item .footer .published {
+  float: left;
+  margin-top: 10px;
+  color: #777777;
+  font-style: italic;
+}
+.exam-item .thumbnail img {
+  position: absolute;
+}
+.exam-item > .thumbnail + .well-header,
+.exam-item > .thumbnail ~ .well-body {
+  margin-left: 85px;
+}
+.exam-item .footer a.btn {
+  float: right;
+}
+@media (max-width: 767px) {
+  .exam-item .title,
+  .exam-item .filing-date,
+  .exam-item .published,
+  .exam-item a.btn {
+    float: none !important;
+  }
+}
+.exam-detail .location {
+  float: right !important;
+}

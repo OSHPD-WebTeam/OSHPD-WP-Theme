@@ -1,0 +1,194 @@
+@media (max-width: 767px) {
+  .main-navigation {
+    margin-top: 0;
+    padding: 0;
+  }
+}
+.top-level-nav .nav-item {
+  position: static;
+}
+@media (max-width: 767px) {
+  .top-level-nav .nav-item {
+    position: relative;
+  }
+}
+.no-js .top-level-nav .nav-item:hover .sub-nav {
+  position: absolute;
+  display: block;
+}
+@media (min-width: 767px) {
+  /* Dynamic Element appended to each .sub-nav */
+  .nav-arrow-container {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  /* Dynamic element contained in .nav-arrow-container */
+  .nav-arrow-down {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    height: 5px;
+    width: 100px;
+    margin-left: -65px;
+  }
+}
+.sub-nav {
+  left: 15px;
+  right: 15px;
+  overflow: visible;
+}
+@media (max-width: 767px) {
+  .sub-nav {
+    border: none;
+  }
+}
+.sub-nav .half,
+.sub-nav .third,
+.sub-nav .quarter,
+.sub-nav .two-thirds,
+.sub-nav .three-quarters {
+  padding: 0;
+}
+.second-level-nav {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .half .second-level-nav,
+  .two-thirds .second-level-nav {
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-gap: 0;
+    -ms-column-gap: 0;
+    -webkit-column-gap: 0;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+  .three-quarters .second-level-nav {
+    -moz-column-count: 3;
+    -ms-column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-gap: 0;
+    -ms-column-gap: 0;
+    -webkit-column-gap: 0;
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+}
+.second-level-nav.oldie:before,
+.second-level-nav.oldie:after {
+  content: " ";
+  display: table;
+}
+.second-level-nav.oldie:after {
+  clear: both;
+}
+.second-level-nav.oldie:before,
+.second-level-nav.oldie:after {
+  content: " ";
+  display: table;
+}
+.second-level-nav.oldie:after {
+  clear: both;
+}
+.second-level-nav [class^="unit"] {
+  -webkit-column-break-inside: avoid;
+  /* for Safari, Chrome, Opera */
+  page-break-inside: avoid;
+  /* for Firefox */
+  break-inside: avoid;
+  /* for IE 10+ */
+  background: none;
+}
+.second-level-nav [class^="unit"] a,
+.second-level-nav [class^="unit"] .link-description {
+  -webkit-column-break-inside: avoid;
+  /* for Safari, Chrome, Opera */
+  page-break-inside: avoid;
+  /* for Firefox */
+  break-inside: avoid;
+  /* for IE 10+ */
+}
+.oldie .second-level-nav [class^="unit"] {
+  width: 33.3333%;
+  float: left;
+}
+a.second-level-link {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  padding: 15px;
+}
+a.second-level-link:hover,
+a.second-level-link:focus {
+  text-decoration: none !important;
+}
+a.second-level-link [class^="ca-gov-icon-"] {
+  display: inline-block;
+  font-size: 22px;
+  font-size: 1.375rem;
+  vertical-align: -2px;
+  margin-right: 3px;
+}
+@media (max-width: 767px) {
+  a.second-level-link {
+    padding: 10px 15px 10px 40px !important;
+  }
+}
+.link-description {
+  display: block;
+  font-size: 16px;
+  font-size: 1rem;
+}
+/* This is to hide the Link description Field in mobile, commenting out.
+@media (max-width: 767px) {
+	
+  .link-description {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+}
+*/
+@media (min-width: 768px) {
+  .unit1 {
+    height: 65px;
+    overflow: hidden !important;
+  }
+  .unit2 {
+    height: 130px;
+    overflow: hidden;
+  }
+  .unit3 {
+    height: 195px;
+    overflow: hidden;
+  }
+  .unit4 {
+    height: 260px;
+    overflow: hidden;
+  }
+  .unit5 {
+    height: 325px;
+    overflow: hidden;
+  }
+  .unit6 {
+    height: 390px;
+    overflow: hidden;
+  }
+}

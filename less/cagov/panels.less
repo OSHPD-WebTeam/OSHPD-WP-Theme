@@ -1,0 +1,170 @@
+.panel {
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+  box-shadow: none;
+}
+.panel .panel-heading:before,
+.panel .panel-heading:after {
+  content: " ";
+  display: table;
+}
+.panel .panel-heading:after {
+  clear: both;
+}
+.panel .panel-heading:before,
+.panel .panel-heading:after {
+  content: " ";
+  display: table;
+}
+.panel .panel-heading:after {
+  clear: both;
+}
+.panel .panel-heading h2,
+.panel .panel-heading h3,
+.panel .panel-heading h4,
+.panel .panel-heading h5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  color: inherit;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: normal;
+  border: none;
+  display: inline-block;
+  margin: -8px 0 0 0;
+}
+.panel .panel-heading h2 small,
+.panel .panel-heading h3 small,
+.panel .panel-heading h4 small,
+.panel .panel-heading h5 small,
+.panel .panel-heading h2 .small,
+.panel .panel-heading h3 .small,
+.panel .panel-heading h4 .small,
+.panel .panel-heading h5 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+.panel .panel-heading h2 small,
+.panel .panel-heading h3 small,
+.panel .panel-heading h4 small,
+.panel .panel-heading h5 small,
+.panel .panel-heading h2 .small,
+.panel .panel-heading h3 .small,
+.panel .panel-heading h4 .small,
+.panel .panel-heading h5 .small {
+  font-size: 75%;
+}
+.panel .panel-heading h2 span[class^="ca-gov-icon-"],
+.panel .panel-heading h3 span[class^="ca-gov-icon-"],
+.panel .panel-heading h4 span[class^="ca-gov-icon-"],
+.panel .panel-heading h5 span[class^="ca-gov-icon-"] {
+  font-size: 32px;
+  font-size: 2rem;
+  position: relative;
+  top: 4px;
+}
+.panel .panel-heading .options {
+  display: inline-block;
+  float: right;
+}
+.panel .panel-heading .options .btn {
+  padding: 1px 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.panel.photo-left,
+.panel.photo-right {
+  position: relative;
+}
+.panel.photo-left .panel-body,
+.panel.photo-right .panel-body {
+  position: relative;
+}
+.panel.photo-left .panel-body {
+  padding-left: 27%;
+}
+.panel.photo-left .panel-body .photo {
+  left: 0;
+}
+.panel.photo-right .panel-body {
+  padding-right: 27%;
+}
+.panel.photo-right .panel-body .photo {
+  right: 0;
+}
+.panel .photo {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 25%;
+}
+@media (max-width: 767px) {
+  .panel .panel-body {
+    padding: 15px !important;
+  }
+  .panel .photo {
+    background-image: none !important;
+  }
+}
+.panel-body h1 span[class^="ca-gov-icon-"] {
+  margin-left: 0 !important;
+}
+.main-secondary .panel {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-secondary .panel {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+}
+.main-secondary .panel .panel-heading {
+  border-radius: 0;
+  padding: 0;
+}
+.main-secondary .panel .panel-heading h2,
+.main-secondary .panel .panel-heading h3,
+.main-secondary .panel .panel-heading h4,
+.main-secondary .panel .panel-heading h5 {
+  margin: 0;
+  display: block;
+  text-align: center;
+  padding: 10px 15px 10px 40px;
+  position: relative;
+}
+.main-secondary .panel .panel-heading h2 span[class^="ca-gov-icon-"],
+.main-secondary .panel .panel-heading h3 span[class^="ca-gov-icon-"],
+.main-secondary .panel .panel-heading h4 span[class^="ca-gov-icon-"],
+.main-secondary .panel .panel-heading h5 span[class^="ca-gov-icon-"] {
+  font-size: 28.8px;
+  font-size: 1.8rem;
+  position: absolute;
+  left: 10px;
+}
+.main-secondary .panel .panel-body {
+  background: transparent;
+}
+/* NOTE: although any panel could have a triangle, at this time, only .panel-standout has css and an image */
+.panel.highlight .panel-heading {
+  position: relative;
+}
+.panel.highlight .panel-heading .triangle {
+  position: absolute;
+  bottom: -16px;
+  height: 12px;
+  left: 50%;
+  margin-left: -12px;
+  width: 24px;
+}
+.panel-group .panel + .panel {
+  margin-top: 22px;
+}
