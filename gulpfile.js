@@ -1,19 +1,14 @@
 var gulp = require('gulp');
 var watch = require('gulp-watch');
-
 var cleanCSS = require('gulp-clean-css');
 var less = require('gulp-less');
-
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-
 var path = require('path');
  
-
- 
 gulp.task('default', function () {
-//	gulp.start('minify-css');
-	gulp.start('minify-js');
+	gulp.start('minify-css');
+//	gulp.start('minify-js');
 });
 	
 gulp.task('minify-css', function () {
